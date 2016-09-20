@@ -15,6 +15,10 @@ using StatsBase     # From package StatsBase.
 using Search
 using SearchSetup
 using SnpArrays
+
+include("common.jl")  # mathematical subroutines
+include("scoring.jl") # functions to perform scoring
+include("regress.jl") # functions for regression
 #
 # Define the data structures used by OpenMendel.
 #
@@ -27,7 +31,7 @@ include("keywords.jl")
 #
 # Include useful general utilities.
 #
-include("general_utilities.jl")
+#include("general_utilities.jl")
 #
 # Include useful genetic utilities.
 #
